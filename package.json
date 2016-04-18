@@ -1,0 +1,73 @@
+{
+  "name": "node-paypal-sample-app",
+  "version": "1.0.0",
+  "description": "Sample node app connecting to the PayPal REST API using InContext checkout",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "xo",
+    "pretest": "xo",
+    "test": "ava",
+    "build": "webpack",
+    "fix": "xo --fix"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinniegarcia/node-paypal-sample.git"
+  },
+  "keywords": [
+    "node",
+    "paypal",
+    "sample",
+    "paypal",
+    "rest",
+    "sdk"
+  ],
+  "author": "vinnie garcia <vinnie@coev.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinniegarcia/node-paypal-sample/issues"
+  },
+  "homepage": "https://github.com/vinniegarcia/node-paypal-sample#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.6",
+    "babel-preset-es2015-node4": "^2.1.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "escape-html": "^1.0.3",
+    "express": "^4.13.4",
+    "isomorphic-fetch": "^2.2.1",
+    "koa": "^2.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-react-view": "^2.0.0",
+    "koa-router": "^7.0.1",
+    "koa-static-cache": "^3.1.7",
+    "paypal-rest-sdk": "^1.6.8",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-koa-middleware": "0.0.4"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "babel-loader": "^6.2.4",
+    "eslint": "^2.7.0",
+    "koa-webpack-middleware": "^1.0.1",
+    "nodemon": "^1.9.1",
+    "nyc": "^6.4.0",
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1",
+    "xo": "^0.14.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "intent": "sale",
+    "redirect_urls": {
+        "return_url": "http://127.0.0.1:3000/process", 
+        "cancel_url": "http://127.0.0.1:3000/cancel"
+    },
+    "payer": {
+        "payment_method": "paypal"
+    },
+    "transactions": [
+        {
+            "amount": {
+                "total": "7.47",
+                "currency": "USD"
+            },
+            "description": "Thisisthepaymenttransactiondescription."
+        }
+    ]
+}
